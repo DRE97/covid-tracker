@@ -1,0 +1,33 @@
+.SearchBar {
+    display: flex;
+    justify-content: center;
+    background-color: #f2f4f7;
+}
+
+.SearchBar-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 36rem;
+}
+
+.SearchBar-content h3 {
+    margin-top: 0.8rem;
+}
+
+.SearchBar-options {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.7rem;
+    margin-bottom: 1.88rem;
+}
+  
+.SearchBar-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.SearchBar-submit {
+    margin-bottom: 1.5rem;
+}
