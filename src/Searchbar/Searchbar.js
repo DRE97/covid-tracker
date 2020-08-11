@@ -21,9 +21,7 @@ class Searchbar extends React.Component {
         if(this.state.term === '') {
             alert('Unvalid input');
         } else {
-            //console.log(this.state.selection);
-            //console.log(this.state.term);
-            this.props.searchCountry(this.state.term);
+            this.props.searchCountry(this.state.term, this.state.selection);
         }
         event.preventDefault();
     }

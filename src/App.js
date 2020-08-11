@@ -1,5 +1,4 @@
 import React from 'react';
-//import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Searchbar from './Searchbar/Searchbar';
@@ -14,16 +13,16 @@ class App extends React.Component {
 
     this.state = {
       result: [],
-      visibility: 'hidden'
+      isReady: false
     }
 
     this.searchCountry = this.searchCountry.bind(this);
   }
 
-  searchCountry(country) {
-    Search(country)
+  searchCountry(term, selection) {
+    Search(term, selection)
     .then(data => {
-      this.setState({result: data, visibility: 'visible'});
+      this.setState({result: data, isReady: true});
     });
   }
   
@@ -35,9 +34,9 @@ class App extends React.Component {
         <div className="mainContent mt-4">
           <Global />
           <Top />
-          <div className="SearchResults" style={{visibility: this.state.visibility}}>
-            <SearchResults result={this.state.result}/>
-          </div>
+          {
+            this.state.isReady ? <SearchResults result={this.state.result}/> : <h3>No results</h3>
+          }
         </div>
       </div>
     );
