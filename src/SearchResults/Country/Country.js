@@ -7,10 +7,7 @@ function Country(props) {
     const convert = new Intl.NumberFormat();
     return (
         <>
-            <div>
-                <h3>Search Result</h3>
-            </div>
-            <div className="result mt-1 d-flex flex-column">
+            <div className="result d-flex flex-column">
                 <div className="result-header mt-2 d-flex justify-content-center">
                     <img className="rounded-lg" src={result.countryInfo.flag} alt={result.country}/>
                     <h3>{result.country}</h3>
@@ -22,7 +19,7 @@ function Country(props) {
                     <p><strong>Total Deaths:</strong> {convert.format(result.deaths)}</p>
                 </div>
                 <div className="result-footer mb-2">
-                    <Button variant="primary">More info</Button>
+                    <Button variant="primary" onClick={props.handleClick}>More info</Button>
                 </div>
             </div>
         </>
