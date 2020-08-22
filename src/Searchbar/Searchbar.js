@@ -44,7 +44,7 @@ function Searchbar(props) {
                     </Form>
                 </div>
                 <div className="SearchBar-submit">
-                    <Button variant="outline-primary" onClick={handleSearch}>Search</Button>
+                    <Button className="button" variant="primary" onClick={handleSearch}>Search</Button>
                 </div>
             </div>
         </div>

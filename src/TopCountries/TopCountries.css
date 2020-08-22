@@ -1,0 +1,22 @@
+.top {
+    width: 16rem;
+    height: 33.8rem;
+    grid-area: 1 / 1 / 3 / 2;
+    place-self: start end;
+}
+
+.country {
+    width: 100%;
+    margin-top: 0.8rem;
+    display: inline-flex;
+}
+
+.country img {
+    width: 35px;
+    height: 30px;
+    margin: 0 0.5rem;
+}
+
+.country strong {
+    margin-right: 0.5rem;
+}

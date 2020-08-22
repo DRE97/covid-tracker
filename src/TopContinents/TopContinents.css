@@ -1,0 +1,17 @@
+.top-continents {
+    width: 16rem;
+    height: 17rem;
+    grid-area: 1 / 3 / 3 / 3;
+    place-self: start start;
+}
+
+.continent {
+    width: 13rem;
+    margin-top: 0.8rem;
+    margin-left: 0.6rem;
+    display: inline-flex;
+}
+
+.continent strong {
+    margin-right: 0.5rem;
+}
